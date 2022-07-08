@@ -427,7 +427,10 @@ footer p {
   #diff {
     display: none;
   }
-
+  
+  #mainname{
+    font-size: 50px;
+  }
   #bio {
     margin-top: auto;
     text-align: cente;
@@ -449,7 +452,7 @@ footer p {
     display: inline;
   }
   #myphoto {
-    margin-left: 250px;
+    margin-left: 390px;
     height: 250px;
   }
   #name {
@@ -460,7 +463,7 @@ footer p {
   #role {
     margin-top: -2rem;
     font-size: 3rem;
-    margin-left: 18rem;
+    margin-left: 17rem;
   }
   #place {
     margin-top: -2rem;
@@ -468,17 +471,17 @@ footer p {
     margin-left: 24rem;
   }
   #mail{
-    margin-left: 1000px;
-    height: 45px;
-    width: 50px;
+    margin-left: 90px;
+    height: 75px;
+    width: 70px;
   }
   #git,
   #link,
   #insta,
   #cv {
-    margin-left: 20px;
-    height: 45px;
-    width: 50px;
+    margin-left: 60px;
+    height: 75px;
+    width: 80px;
   }
   #skill img {
     overflow: hidden;
@@ -495,22 +498,39 @@ footer p {
   #box3 {
     margin-left: 10px;
   }
-
-  #cpp,
-  #java,
-  #python,
-  #html,
-  #css,
-  #js {
-    overflow: hidden;
+  #javascript{
+    margin-top: -670px;
+    margin-left: 420px;
   }
-  #nm{
-    margin-left: 10px;
+  #Experience h1{
+    margin-left: 320px;
   }
-  #em{
-    margin-left: 10px;
+  #box1,
+  #box2,
+  #box3{
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 20px;
   }
+  
+  #Project h1{
+    margin-left: 320px;
+  }
+  #contact h1{
+    margin-left: 320px;
+  }
+  #nm,
+  #em,
   #mess{
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 70px;
+    font-size: 50px;
+
   }
+  /* #mess{
+    height: 300px;
+    font-size: 50px;
+    
+  } */
 }
