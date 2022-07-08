@@ -12,7 +12,7 @@
   <body>
     <header>
       <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active"><b> Mayank Runija</b></a>
+        <a id="mainname" href="index.html" class="active"><b> Mayank Runija</b></a>
         <a href="#" id="diff">Home</a>
         <a href="#skill">Skills</a>
         <a href="#Experience">Experience</a>
@@ -31,7 +31,7 @@
           </button>
         </a>
         <a href="javascript:void(0);" class="icon" onclick="navbar()">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars" style="font-size: 60px;"></i>
         </a>
       </div>
     </header>
@@ -58,7 +58,7 @@
         </a>
 
         <a href="https://github.com/Mickey18" id="an" target="_blank">
-          <img id="git" src="img/Git.png" alt="GitHub" />
+          <img id="git" src="img/git.png" alt="GitHub" />
         </a>
 
         <a
@@ -150,8 +150,10 @@
           <span id="html">HTML</span>
           <img src="img/css.png" alt="css icon" />
           <span id="css">CSS</span>
-          <img src="img/js.png" alt="js icon" />
+          <div id="javascript">
+          <img  src="img/js.png" alt="js icon" />
           <span id="js">JAVA SCRIPT</span>
+        </div>
         </div>
         <br /><br /><br /><br /><br /><br /><br /><br />
         <hr />
@@ -159,7 +161,7 @@
       <!--****************************Experience************************************* -->
       <div id="Experience">
         <br />
-        <h1>Experience</h1>
+        <h1 id="exp">Experience</h1>
         <div id="box1">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ab
@@ -213,11 +215,9 @@
       <div id="contact">
         <h1>Contact</h1>
 
-        <input type="text" id="nm" placeholder="Name" />
-        <br />
-        <input type="text" id="em" placeholder="E-Mail" />
-        <br />
-        <textarea placeholder="Message" id="mess" cols="30" rows="8"></textarea>
+        <input type="text" id="nm" placeholder="Name"/>
+        <input type="text" id="em" placeholder="E-Mail"/>
+        <input type="text" id="em" placeholder="Message" aria-rowcount="50"/>
       </div>
     </main>
 
