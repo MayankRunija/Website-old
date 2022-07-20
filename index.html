@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <header>
@@ -37,18 +39,18 @@
     </header>
 
     <main>
-      <div>
-        <img src="img/mickey18.jpg" alt="Mayank Runija" id="myphoto" />
+      <div data-aos="zoom-in">
+        <img data-aos="zoom-in-down" src="img/mickey18.jpg" alt="Mayank Runija" id="myphoto" />
         <div>
           <h1 id="name">Mayank Runija</h1>
           <h3 id="role">Web Developer</h3>
-          <a id="an" href="" target="_blank"
+          <a id="an" href="https://www.freelancer.com/" target="_blank"
             ><h4 id="place">Freelancer</h4></a
           >
         </div>
       </div>
    
-      <div>
+      <div data-aos="zoom-in">
         <a id="mail-margin" href="mailto:mickeyruni18@gmail.com" id="an" target="_blank">
           <img
           id="mail"
@@ -82,7 +84,7 @@
           <img id="cv" src="img/CV.png" alt="CV" />
         </a>
       </div>
-      <div>
+      <div data-aos="flip-right">
         <div id="bio">
           <h1>Biography</h1>
 
@@ -93,7 +95,7 @@
             and 12th from State Board School. That was Best time of my life.
           </p>
           <p>
-            Recently I have completed Google cloud program , In this
+            Recently I have completed Google 30 Day's cloud program , In this
             program I have learned about Virtual Machine , Jupiter Labs , IOT.
             Talking about my skills I'am Proficient in HTML, Wordpress,
             Bootstrap, JavaScript and CSS. In My free time I always explores new
@@ -103,7 +105,7 @@
           <p>My interests lie in solving problems related to Computer.</p>
         </div>
       </div>
-      <div id="tab">
+      <div id="tab" data-aos="flip-up">
         <div>
           <h2>Interest</h2>
 
@@ -112,7 +114,7 @@
           <li>Artificial Intelligence</li>
           <li>Machine Learning</li>
         </div>
-        <div id="edu">
+        <div id="edu" data-aos="flip-up">
           <h2>Education</h2>
           <div>
             <img id="gd-cap" src="img/cap.png" alt="" />
@@ -134,7 +136,7 @@
       <hr />
       <!--*******************************Skills*****************************-->
 
-      <div id="skill">
+      <div id="skill" data-aos="zoom-in-down">
         <br /><br />
         <h1>Skills</h1>
         <br /><br />
@@ -162,10 +164,10 @@
       <br><br>
       <hr />
       <!--****************************Experience************************************* -->
-      <div id="Experience">
+      <div id="Experience" >
         <br />
-        <h1 id="exp">Experience</h1>
-        <div id="box1">
+        <h1 id="exp" data-aos="flip-left">Experience</h1>
+        <div id="box1" data-aos="zoom-in-up">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ab
             exercitationem labore voluptatum architecto minus sed aliquid
@@ -179,7 +181,7 @@
           </p>
         </div>
 
-        <div id="box2">
+        <div id="box2" data-aos="zoom-in-up">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             rerum quia obcaecati eius ullam placeat modi facere, ipsum
@@ -193,7 +195,7 @@
           </p>
         </div>
 
-        <div id="box3">
+        <div id="box3" data-aos="zoom-in-up">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
             minima, obcaecati eius architecto magnam quas aut ea sit quos. Rem
@@ -215,7 +217,7 @@
       </div>
       <hr />
       <!-- ******************Contact******************** -->
-      <div id="contact">
+      <div id="contact" data-aos="fade-up">
         <h1>Contact</h1>
        
         <input type="text" id="nm" placeholder="Name"/>
@@ -228,9 +230,28 @@
       <span>
         <a href="#">
           <img src="img/top.png" alt="top" />
-        </a> </span
-      ><br /><br />
+        </a> </span><br /><br />
+        <div class="foot">
+          <div class="foot-icon">
+            <a href="mailto:mickeyruni18@gmail.com" id="an" target="_blank">
+              <img src="img/Gmail.png" alt="Gmail"/>
+            </a>
+    
+            <a href="https://github.com/Mickey18" id="an" target="_blank">
+              <img src="img/Git.png" alt="GitHub" />
+            </a>
+    
+            <a href="https://www.linkedin.com/in/mayank-runija-444111205" target="_blank">
+              <img src="img/linkedin.png" alt="Linkedin" />
+            </a>
+    
+            <a href="https://www.instagram.com/mayank.runija18/" target="_blank">
+              <img src="img/insta.png" alt="Instagram" />
+            </a>
+          </div>
+
       <p>© Mayank Runija</p>
+    </div>
     </footer>
     <!-- nav bar -->
     <script>
@@ -242,13 +263,18 @@
           x.className = "topnav";
         }
       }
-    </script>
-    <!-- dark Mode -->
-    <script>
+      // dark Mode 
       function darkmode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
     </script>
   </body>
 </html>
